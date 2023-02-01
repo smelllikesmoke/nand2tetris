@@ -18,4 +18,5 @@ CHIP And {
     Nand(a=c, b=c, out=out);
 
     // The explanation is in the description of this file.
+    // cell
 }
