@@ -19,7 +19,7 @@ CHIP Or {
     Nand(a=b, b=b, out=c2);
     Nand(a=c1, b=c2, out=out);
 
-    // nand each then nand the result to get OR
-    // Put your code here:
+    // Explantion is in the description of this file.
+    // cell
 
 }
