@@ -1,0 +1,26 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Mux4Way16.hdl
+
+/**
+ * 4-way 16-bit multiplexor:
+ * out = a if sel == 00
+ *       b if sel == 01
+ *       c if sel == 10
+ *       d if sel == 11
+ */
+
+CHIP Mux4Way16 {
+    IN a[16], b[16], c[16], d[16], sel[2];
+    OUT out[16];
+
+    PARTS:
+
+    Mux16(a=a, b=b, sel=sel[0], out=first);
+    Mux16(a=c, b=d, sel=sel[0], out=second);
+    Mux16(a=first, b=second, sel=sel[1], out=out);
+
+    // the logic is simple, we first map out all of the inputs through least significant bit (the one on the most left) and then do a mux at the end using the most significant bit (the one on the right) , because this 2nd bit will finally decide which of the bus shall be selected to be sent to out
+    // Put your code here:
+}
