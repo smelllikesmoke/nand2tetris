@@ -22,10 +22,10 @@ CHIP Xor {
 
     // 2nd implementation:
     // Not(in=a,out=na);
-	  // Not(in=b,out=nb);
-	  // And(a=na,b=b,out=c);
-	  // And(a=a,b=nb,out=d);
-	  // Or(a=c,b=d,out=out);
+    // Not(in=b,out=nb);
+    // And(a=na,b=b,out=c);
+    // And(a=a,b=nb,out=d);
+    // Or(a=c,b=d,out=out);
    
    
     // 3rd impementation: 
